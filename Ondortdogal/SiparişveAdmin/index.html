@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sipariş Oluştur</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>E-Ticaret Sipariş Ver</h1>
+        <div class="product-list">
+            <div class="product" data-product="Antep Fıstığı">
+                <h3>Antep Fıstığı</h3>
+                <p class="price">700₺</p>
+                <button class="add-to-cart" data-name="Antep Fıstığı" data-price="700">Sepete Ekle</button>
+            </div>
+            <div class="product" data-product="Maraş Sucuğu">
+                <h3>Maraş Sucuğu</h3>
+                <p class="price">350₺</p>
+                <button class="add-to-cart" data-name="Maraş Sucuğu" data-price="350">Sepete Ekle</button>
+            </div>
+            <div class="product" data-product="Badem">
+                <h3>Badem</h3>
+                <p class="price">600₺</p>
+                <button class="add-to-cart" data-name="Badem" data-price="600">Sepete Ekle</button>
+            </div>
+            <div class="product" data-product="Fındık">
+                <h3>Fındık</h3>
+                <p class="price">600₺</p>
+                <button class="add-to-cart" data-name="Fındık" data-price="600">Sepete Ekle</button>
+            </div>
+            <div class="product" data-product="Kivi Kurusu">
+                <h3>Kivi Kurusu</h3>
+                <p class="price">450₺</p>
+                <button class="add-to-cart" data-name="Kivi Kurusu" data-price="450">Sepete Ekle</button>
+            </div>
+            <div class="product" data-product="Hindistan Cevizi Kurusu">
+                <h3>Hindistan Cevizi Kurusu</h3>
+                <p class="price">450₺</p>
+                <button class="add-to-cart" data-name="Hindistan Cevizi Kurusu" data-price="450">Sepete Ekle</button>
+            </div>
+            <div class="product" data-product="Ceviz İçi">
+                <h3>Yer Fıstığı</h3>
+                <p class="price">150₺</p>
+                <button class="add-to-cart" data-name="Yer Fıstığı" data-price="150">Sepete Ekle</button>
+            </div>
+            <div class="product" data-product="Kuru Kayısı">
+                <h3>Kaju</h3>
+                <p class="price">650₺</p>
+                <button class="add-to-cart" data-name="Kaju" data-price="650">Sepete Ekle</button>
+            </div>
+            <div class="product" data-product="Kurutulmuş Pamelo">
+                <h3>Pamelo</h3>
+                <p class="price">400₺</p>
+                <button class="add-to-cart" data-name="Kurutulmuş Pamelo" data-price="400">Sepete Ekle</button>
+            </div>
+            <div class="product" data-product="Kurutulmuş Ananas">
+                <h3>Kurutulmuş Ananas</h3>
+                <p class="price">400</p>
+                <button class="add-to-cart" data-name="Kurutulmuş Ananas" data-price="400">Sepete Ekle</button>
+            </div>
+            <div class="product" data-product="Kavun Kurusu">
+                <h3>Kavun Kurusu</h3>
+                <p class="price">400₺</p>
+                <button class="add-to-cart" data-name="Kurutulmuş Kavun" data-price="400">Sepete Ekle</button>
+            </div>
+            <div class="product" data-product="Kurutulmuş Zencefil">
+                <h3>Kurutulmuş Zencefil</h3>
+                <p class="price">400₺</p>
+                <button class="add-to-cart" data-name="Kurutulmuş Zencefil" data-price="400">Sepete Ekle</button>
+            </div>
+            <div class="product" data-product="Kurutulmuş Guava">
+                <h3>Guava</h3>
+                <p class="price">400₺</p>
+                <button class="add-to-cart" data-name="Guava" data-price="400">Sepete Ekle</button>
+            </div>
+            <div class="product" data-product="Zeytinyağı">
+                <h3>Zeytinyağı 1L</h3>
+                <p class="price">400₺</p>
+                <button class="add-to-cart" data-name="Zeytinyağı" data-price="400">Sepete Ekle</button>
+            </div>
+           
+        </div>
+
+        <h2>Sepetiniz</h2>
+        <div id="cart">
+            <ul id="cart-items"></ul>
+            <p id="total-price">Toplam: 0₺</p>
+        </div>
+
+        <!-- Sipariş formu -->
+        <div class="order-form">
+            <input type="text" 
+                   id="customer-name" 
+                   placeholder="Adınız" 
+                   autocomplete="name"
+                   required>
+            
+            <input type="tel" 
+                   id="customer-phone" 
+                   placeholder="Telefon Numaranız" 
+                   pattern="[0-9]*" 
+                   inputmode="numeric"
+                   autocomplete="tel"
+                   required>
+            
+            <textarea id="customer-address" 
+                      placeholder="Adresiniz" 
+                      rows="3"
+                      autocomplete="street-address"
+                      required></textarea>
+            
+            <button id="submit-order">Sipariş Ver</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>

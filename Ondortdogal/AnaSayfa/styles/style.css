@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+:root{
+    --main-color:#964B00;
+    --black-color:#000000;
+    --border:0.1rem solid rgba(255,255,255,0.4) ;
+}
+
+
+
+
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s ease;
+
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x:hidden ;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: 0.8rem;
+    background-color: white;
+
+}
+
+html::-webkit-scrollbar-thumb{
+    background-color: #000;
+    border-radius: 3rem;
+}
+
+html::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+ body {
+        background-color: var(--main-color);
+        margin: 0; /* Sayfanın kenar boşluklarını kaldır */
+        padding: 0; /* Sayfanın iç boşluklarını kaldır */
+        display: block; /* Flex yerine block kullan */
+        overflow-x: hidden; /* Sayfa taşmalarını gizle */
+ }
+    
+ section{
+    padding: 3.5rem 7%;
+
+ }
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 2rem 3.75rem;
+    border-radius: 30rem;
+    font-size: 1.7rem;
+    background-color: #000;
+    color: white;
+}
+.btn:hover{
+    opacity: 0.7;
+}
+.heading{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin-bottom: 3.5rem;
+    border-bottom: 0.1rem solid #fff;
+    
+}
+/*! header start */
+
+.header .logo img{
+    height: 10rem;
+} 
+.header {
+    width: 100%; /* Tam genişlik */
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2%; /* Sağdan ve soldan daha az boşluk */
+    margin: 2rem auto; /* Otomatik ortalama */
+    border-radius: 50px; /* Oval kenarları koruma */
+    box-shadow: 0px 0px 17px -2px rgba(0,0,0,0.75);
+    position: sticky;
+    top: 0;
+    z-index: 1000;   
+}
+
+.header .navbar a{
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color:var(--black-color);
+    border-bottom: 0.1rem solid transparent;
+}
+
+.header .navbar .active,
+.header .navbar a:hover{
+    border-color: var(--main-color);
+    padding-bottom: 0.5rem;
+
+}
+
+.header .buttons button{
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    background-color: transparent;
+}
+
+.menu-container {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+    transition: 0.3s ease-in-out;
+    z-index: 1000; /* header'dan daha yüksek */
+}
+.menu-container.active {
+    right: 0;
+}
+
+.menu {
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu a {
+    padding: 15px;
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+.menu a:hover {
+    background-color: #f5f5f5;
+}
+
+
+/*! header end */
+
+
+/*! anasayfa start */ 
+.anasayfa {
+min-height: 100vh;  
+background: url(../pics/anasayfa2.jpg) no-repeat; 
+background-size: cover;
+background-position: center;
+margin-top: -14.5rem;
+display: flex;
+align-items: center;
+
+
+}
+.anasayfa .content {
+    max-width: 60rem;
+
+}
+.anasayfa .content h3{
+    font-size: 6rem;
+    color: white;
+}
+.anasayfa .content p {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: white;
+}
+
+/*! anasayfa end */
+/*! urunler end */
+.box-container {
+    display: grid; /* Grid sistemi */
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); /* Her satıra otomatik sütunlar */
+    gap: 2rem; /* Kutular arasında boşluk */
+    justify-content: center; /* Yatayda ortalar */
+}
+
+.box {
+    background-color: #fff; /* Kutular için arka plan */
+    padding: 1rem;
+    border-radius: 3rem; /* Köşeleri yuvarlama */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+    text-align: center; /* İçeriği ortalar */
+}
+
+.box img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.urunler .box-container .box .urun-katagori{
+    font-size: 1.2rem;
+}
+.urunler .box-container .box h3{
+    font-size: 2.1rem;
+    padding: 1rem 0;
+}
+
+
+/*! uruneler end */
+/*! iletisim start */
+.iletisim .content{
+    flex: 1 1 45rem;
+}
+
+.iletisim .content h3{
+    font-size: 3rem;
+    color: black;
+}
+.iletisim .content p{
+    font-size: 1.8rem;
+    color: white;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+
+
+/*! iletisim end */
+
+/*! footer start  */
+
+.footer{
+    background-color: var(--black-color);
+    text-align: center;
+
+}
+.footer .links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    border: var(--main-color);
+}
+
+
+.footer .links a{
+    background-color: var(--main-color);
+    padding: 1rem 2rem ;
+    color: white;
+    font-size: 2rem;
+}
+
+.footer .links a:hover{
+    background-color: var(--black-color);
+    opacity: 0.7;
+}
+
+.footer .credit{
+    font-size: 2rem;
+    color: whitesmoke;
+    font-weight: 300;
+    padding-top: 1.5rem;
+
+}
+
+
+/*! footer end  */
+
+/* Tablet için (768px ve altı) */
+@media (max-width: 768px) {
+    .navbar {
+        display: none; /* Üst menüyü gizle */
+    }
+
+    .header .logo img {
+        height: 50px; /* Logo boyutunu küçült */
+    }
+
+    .box-container {
+        grid-template-columns: repeat(2, 1fr); /* Ürünleri 2 sütunda göster */
+    }
+
+    .menu-container {
+        width: 250px; /* Menü genişliğini küçült */
+    }
+}
+
+/* Mobil için (480px ve altı) */
+@media (max-width: 480px) {
+    .box-container {
+        grid-template-columns: 1fr; /* Ürünleri tek sütunda göster */
+    }
+
+    .menu-container {
+        width: 100%; /* Menüyü tam genişlik yap */
+    }
+
+    .anasayfa .content h3 {
+        font-size: 24px; /* Başlık boyutunu küçült */
+    }
+
+    .heading {
+        font-size: 28px; /* Bölüm başlıklarını küçült */
+    }
+
+    .box {
+        margin: 10px; /* Kutu kenar boşluklarını azalt */
+    }
+}

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Doğaldan 14</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <!--! header section start  -->
+    <header class="header">
+      <a href="#" class="logo">
+        <img src="pics/logo2.png" alt="logo" />
+      </a>
+      <nav class="navbar">
+        <a href="#" class="active">Anasayfa</a>
+        <a href="#urunler">Ürünler</a>
+        <a href="#iletisim">İletişim</a>
+      </nav>
+      <div class="buttons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <input type="text" id="searchInput" placeholder="Ara..." onkeyup="searchFunction()">
+        <button>
+          <a href="https://ondortorganiksiparis.netlify.app" target="_blank">
+          <i class="fas fa-shopping-cart"></i>
+          </a>
+        </button>
+        <button id="menu-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </header>
+    <!--! header section end  -->
+    <!--! anasayfa section start  -->
+    <section class="anasayfa">
+        <div class="content"><h3>Doğaldan On Dört</h3>
+            <p>Taze,Sağlıklı,Organik</p>
+            <a href ="https://ondortorganiksiparis.netlify.app"target="_blank" class="btn">Sipariş Ver!</a>
+    </div>
+    </section>
+
+    <!--! anasayfa section end  -->
+    <!--! ürünler section start -->
+<section class="urunler" id="urunler">
+<h1 class="heading">ÜRÜNLERİMİZ</h1>
+<div class="box-container">
+  <div class="box">
+    <div class="box-head">
+      <img src="pics/antepfistigi.jpg" alt="antepfistigi">
+      <span class="urun-katagori">Antep Fıstığı</span>
+      <h3>Taze Antep Fıstığı</h3>
+      <div class="price">700 TL</div>
+    </div>
+    <div class="box-bottom">
+      <a href="https://ondortorganiksiparis.netlify.app"target="_blank" class="btn">Sipariş Ver</a>
+    </div>
+  </div>
+  <div class="box">
+    <div class="box-head">
+      <img src="pics/badem.jpeg" alt="badem">
+      <span class="urun-katagori">Badem</span>
+      <h3>Taze Badem</h3>
+      <div class="price">600 TL</div>
+    </div>
+    <div class="box-bottom">
+      <a href="https://ondortorganiksiparis.netlify.app" target="_blank" class="btn">Sipariş Ver</a>
+    </div>
+  </div>
+  <div class="box">
+    <div class="box-head">
+      <img src="pics/kavrulmus-tuzsuz-findik.jpg" alt="Fındık">
+      <span class="urun-katagori">Fındık></span>
+      <h3>Taze Fındık</h3>
+      <div class="price">600 TL</div>
+    </div>
+    <div class="box-bottom">
+      <a href="https://ondortorganiksiparis.netlify.app" target="_blank" class="btn">Sipariş Ver</a>
+    </div>
+  </div>
+  <div class="box">
+    <div class="box-head">
+      <img src="pics/ms.jpg" alt="marassucugu">
+      <span class="urun-katagori">Maraş Sucuğu</span>
+      <h3>Maraş Sucuğu</h3>
+      <div class="price">350 TL</div>
+    </div>
+    <div class="box-bottom">
+      <a href="https://ondortorganiksiparis.netlify.app" target="_blank" class="btn">Sipariş Ver</a>
+    </div>
+  </div>
+  <div class="box">
+    <div class="box-head">
+      <img src="pics/kivi-kurusu.jpg" alt="kivikurusu">
+      <span class="urun-katagori">Kivi kurusu</span>
+      <h3>Kurutulmuş kivi</h3>
+      <div class="price">450 TL</div>
+    </div>
+    <div class="box-bottom">
+      <a href="https://ondortorganiksiparis.netlify.app" target="_blank" class="btn">Sipariş Ver</a>
+    </div>
+  </div>
+  <div class="box">
+    <div class="box-head">
+      <img src="pics/klk.jpg" alt="karisiklux">
+      <span class="urun-katagori">Lux Çerez</span>
+      <h3>Karışık Lüx Kuruyemiş</h3>
+      <div class="price">650 TL</div>
+    </div>
+    <div class="box-bottom">
+      <a href="https://ondortorganiksiparis.netlify.app" target="_blank" class="btn">Sipariş Ver</a>
+    </div>
+  </div>
+  <div class="box">
+    <div class="box-head">
+      <img src="pics/yerf.jpg" alt="yerfistigi">
+      <span class="urun-katagori">Yer Fıstığı</span>
+      <h3>Taze Yer Fıstığı</h3>
+      <div class="price">150 TL</div>
+    </div>
+    <div class="box-bottom">
+      <a href="https://ondortorganiksiparis.netlify.app" target="_blank" class="btn">Sipariş Ver</a>
+    </div>
+  </div>
+  <div class="box">
+    <div class="box-head">
+      <img src="pics/hck.jpg" alt="hck">
+      <span class="urun-katagori">Hindistan Cevizi</span>
+      <h3>Hindistan Cevizi Kurusu</h3>
+      <div class="price">450 TL</div>
+    </div>
+    <div class="box-bottom">
+      <a href="https://ondortorganiksiparis.netlify.app" target="_blank" class="btn">Sipariş Ver</a>
+    </div>
+  </div>
+  <div class="box">
+    <div class="box-head">
+      <img src="pics/kaju.jpg" alt="kaju">
+      <span class="urun-katagori">Kaju</span>
+      <h3>Taze Kaju</h3>
+      <div class="price">650 TL</div>
+    </div>
+    <div class="box-bottom">
+      <a href="https://ondortorganiksiparis.netlify.app" target="_blank" class="btn">Sipariş Ver</a>
+    </div>
+  </div>
+  <div class="box">
+    <div class="box-head">
+      <img src="pics/pomelo.jpg" alt="pomelo">
+      <span class="urun-katagori">Pomelo</span>
+      <h3>Kurutulmuş Pomelo</h3>
+      <div class="price">400 TL</div>
+    </div>
+    <div class="box-bottom">
+      <a href="https://ondortorganiksiparis.netlify.app" target="_blank" class="btn">Sipariş Ver</a>
+    </div>
+  </div>
+  <div class="box">
+    <div class="box-head">
+      <img src="pics/ananaskurusu.jpg" alt="ananaskurusu">
+      <span class="urun-katagori">Ananas</span>
+      <h3>Kurutulmuş Ananas</h3>
+      <div class="price">400 TL</div>
+    </div>
+    <div class="box-bottom">
+      <a href="https://ondortorganiksiparis.netlify.app" target="_blank" class="btn">Sipariş Ver</a>
+    </div>
+  </div>
+  <div class="box">
+    <div class="box-head">
+      <img src="pics/kavunkurusu.jpg" alt="kavunkurusu">
+      <span class="urun-katagori">Kurutulmuş Kavun</span>
+      <h3>Kavun Kurusu</h3>
+      <div class="price">400 TL</div>
+    </div>
+    <div class="box-bottom">
+      <a href="https://ondortorganiksiparis.netlify.app" target="_blank" class="btn">Sipariş Ver</a>
+    </div>
+  </div>
+  <div class="box">
+    <div class="box-head">
+      <img src="pics/zencefilkurusu.jpg" alt="zencefilkurusu">
+      <span class="urun-katagori">Zencefil</span>
+      <h3>Kurutulmuş Zencefil</h3>
+      <div class="price">400 TL</div>
+    </div>
+    <div class="box-bottom">
+      <a href="https://ondortorganiksiparis.netlify.app" target="_blank" class="btn">Sipariş Ver</a>
+    </div>
+  </div>
+  <div class="box">
+    <div class="box-head">
+      <img src="pics/zencefilkurusu.jpg" alt="guavakurusu">
+      <span class="urun-katagori">Guava Kurusu</span>
+      <h3>Kurutulmuş Guava</h3>
+      <div class="price">400 TL</div>
+    </div>
+    <div class="box-bottom">
+      <a href="https://ondortorganiksiparis.netlify.app" target="_blank" class="btn">Sipariş Ver</a>
+    </div>
+  </div>
+  <div class="box">
+    <div class="box-head">
+      <img src="pics/zencefilkurusu.jpg" alt="zeytinyagi">
+      <span class="urun-katagori">Zeytinyağı</span>
+      <h3>1L Zeytinyağı </h3>
+      <div class="price">400 TL</div>
+    </div>
+    <div class="box-bottom">
+      <a href="https://ondortorganiksiparis.netlify.app" target="_blank" class="btn">Sipariş Ver</a>
+    </div>
+  </div>
+</div>
+</section>
+      <!--! ürünler section end  -->
+      <!--! iletisim section start  -->
+<section class="iletisim" id="iletisim">
+  <h1 class="heading">İLETİŞİM</h1>
+  <div class="content">
+    <h3>Bizimle İletişime Geçin</h3>
+       <p>Bolu içi adrese teslim.</p>
+    <p>Telefonla dilediğiniz zaman ulaşabilirsiniz:0 (505) 347 97 98-+0(544) 154 68 28</p>
+    <p>Email:serbetiki3@hotmail.com</p>
+    </div>
+</section>
+      <!--! iletişim section end  -->
+       <!--! footer section start -->
+    <section class="footer">
+      <div class="links">
+          <a href="#">Ana Sayfa</a>
+          <a href="#urunler">Ürünler</a>
+          <a href="#iletisim">İletişim</a>
+      </div>
+      <div class="credit">
+        Developed by <span>Mehmet Ali DOĞAN ©</span> | All Rights Reserved
+      </div>
+
+  </section>
+
+  <!--! footer section end -->
+  <div class="menu-container">
+    <div class="menu">
+        <a href="#">Ana Sayfa</a>
+        <a href="#urunler">Ürünler</a>
+        <a href="#iletisim">İletişim</a>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  </body>
+</html>
