@@ -1,5 +1,5 @@
 // Google Sheets API URL'si - Bu URL'yi Google Apps Script'ten aldığınız URL ile değiştirin
-const SHEET_API_URL = 'https://script.google.com/macros/s/AKfycbw4vJIbfBRwrYKA1sXLWcBe2Dp2tusCvymJV5gSnESBowU-tlhwhITe-B8OMLaBfqzOuA/exec';
+const SHEET_API_URL = 'GOOGLESHEETSAPI';
 
 let cart = []; // Sepet başlangıçta boş
 let totalPrice = 0;
@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const success = await submitOrder(customerName, customerPhone, customerAddress);
             if (success) {
                 const message = `*Yeni Sipariş*\n\nMüşteri: ${customerName}\nTelefon: ${customerPhone}\nAdres: ${customerAddress}\n\nSipariş:\n${cart.map(item => `${item.name} - ${item.price}₺`).join('\n')}\n\nToplam: ${totalPrice}₺`;
-                const whatsappUrl = `https://wa.me/905053479798?text=${encodeURIComponent(message)}`;
+                const whatsappUrl = `https://wa.me/TELEFONNO?text=${encodeURIComponent(message)}`;
                 window.open(whatsappUrl, '_blank');
                 alert('Siparişiniz alındı!');
                 
@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const username = document.getElementById('username').value.trim();
             const password = document.getElementById('password').value.trim();
             
-            if (username === 'admin' && password === 'admin') {
+            if (username === 'username' && password === 'password') {
                 document.getElementById('login-section').style.display = 'none';
                 document.getElementById('admin-panel').style.display = 'block';
                 loadProducts(); // Ürünleri yükle
